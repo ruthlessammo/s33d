@@ -16,12 +16,12 @@ class UserControllerConstructor{
     .catch(next);
   }
 
-  create(req, res, next) {
-    console.log(req.body);
-    User.create(req.body)
-    .then(users => res.status(201).json(users))
-    .catch(next);
-  }
+  // create(req, res, next) {
+  //   console.log(req.body);
+  //   User.create(req.body)
+  //   .then(users => res.status(201).json(users))
+  //   .catch(next);
+  // }
 }
 
 const UserController = new UserControllerConstructor;
