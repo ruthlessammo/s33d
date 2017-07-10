@@ -6,10 +6,11 @@ import instagram from './assets/instagram.png'
 import twitter from './assets/twitter.png'
 
 
+
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="u-full-width">
         <video autoPlay loop id="video-background" muted>
           <source src={seed} type="video/mp4"/>
         </video>
