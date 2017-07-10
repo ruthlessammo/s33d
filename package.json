@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/ruthlessammo/s33d/issues"
   },
-  "homepage": "https://github.com/ruthlessammo/s33d#readme"
+  "homepage": "https://github.com/ruthlessammo/s33d#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1",
+    "morgan": "^1.8.2"
+  }
 }
