@@ -9,7 +9,7 @@ class Splash extends Component {
       <div>
         <Logo />
         <Video autoPlay loop muted>
-            <source src={seed} type="mp4" />
+            <source src={seed} type="video/mp4" />
         </Video>
       </div>
     )
