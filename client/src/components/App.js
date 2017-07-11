@@ -15,12 +15,12 @@ class App extends Component {
           )}
         />
 
-        {/*<Route
-          path="/register" exact
-          render={() => {
+        <Route
+          path="/register"
+          render={() => (
             <Register />
-          }}
-        />*/}
+          )}
+        />
 
       </div>
     );

@@ -1,7 +1,7 @@
-import React from 'react';
-import axios from 'axios';
+import React, { Component } from 'react';
+import $ from 'jquery';
 
-export default class Form extends React.Component{
+class Register extends Component{
   constructor() {
     super();
     this.state = {};
@@ -14,12 +14,11 @@ export default class Form extends React.Component{
 
   }
   addInfo(e) {
-    console.log('hello');
+    console.log('Fired!');
     e.preventDefault();
-    axios.post('http://localhost:3001/api/', this.state)
+    $.post('http://localhost:4001/api/register', this.state)
     .done(() => {
       console.log('posted');
-
     });
   }
 
@@ -27,24 +26,17 @@ export default class Form extends React.Component{
     return (
       <div className="formContainer">
         <form className="form">
-          <label htmlFor='name'></label>
-          <input className="inputs" name='name' onChange={this.setInfo} placeholder='Name'/>
           <label htmlFor='email'></label>
           <input className="inputs middleInputs" name='email' onChange={this.setInfo} placeholder='Email'/>
-          <div className="selection">
-            <label className="provider middleInputs" htmlFor='provider'>Accounting platform used:</label>
-            <select className="select" name='provider' onChange={this.setInfo}>
-              <option value='null'>Please select</option>
-              <option value='xero'>Xero</option>
-              <option value='crunch'>Crunch</option>
-              <option value='freeAgent'>Free Agent</option>
-            </select>
-          </div>
-          <label htmlFor='size'></label>
-          <input className="inputs company" placeholder="Company Size" name='size' onChange={this.setInfo} type='number'/>
+          <label htmlFor='country'></label>
+          <input className="inputs" name='country' onChange={this.setInfo} placeholder="Country" />
+          <label htmlFor='city'></label>
+          <input className="inputs" name='city' onChange={this.setInfo} placeholder="City" />
           <button onClick={this.addInfo}>Sign Me up!</button>
         </form>
       </div>
     )
   }
 }
+
+export default Register;
