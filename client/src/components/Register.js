@@ -20,6 +20,7 @@ class Register extends Component{
     .done(() => {
       console.log('posted');
     });
+    $('input').val('');
   }
 
   render() {
