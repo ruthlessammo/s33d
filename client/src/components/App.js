@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import Home from './Home';
+import Register from './Register';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>s33d</h1>
+
+        <Route
+          path="/" exact
+          render={() => (
+            <Home />
+          )}
+        />
+
+        {/*<Route
+          path="/register" exact
+          render={() => {
+            <Register />
+          }}
+        />*/}
+
       </div>
     );
   }
