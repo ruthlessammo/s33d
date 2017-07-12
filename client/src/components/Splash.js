@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
 import seed from '../assets/seed.mp4';
+import Grid from 'react-css-grid';
+import '../css/Splash.css'
 
 class Splash extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Logo />
-        </div>
-        <video autoPlay loop muted>
-            <source src={seed} type="video/mp4" />
-        </video>
+        <Grid col={12}>
+          <div className="splashLogo">
+            <Logo />
+          </div>
+        </Grid>
+        <Grid col={12} className="splashVideo">
+          <video className="seedVideo" autoPlay loop muted>
+              <source src={seed} type="video/mp4" />
+          </video>
+        </Grid>
       </div>
     )
   }

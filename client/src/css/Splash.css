@@ -1,0 +1,28 @@
+.splashLogo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.splashVideo {
+  display: block;
+  /*width: 100vw;*/
+}
+
+.seedVideo {
+  position: relative;
+  width: 100%;
+}
+/*Mobile*/
+@media screen and (min-width: 480px) {
+  .seedVideo {
+    min-width: 480px;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 780) {
+  .seedVideo {
+    min-width: 780;
+  }
+}
