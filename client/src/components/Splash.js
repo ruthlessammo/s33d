@@ -6,7 +6,9 @@ class Splash extends Component {
   render() {
     return (
       <div>
-        <Logo />
+        <div>
+          <Logo />
+        </div>
         <video autoPlay loop muted>
             <source src={seed} type="video/mp4" />
         </video>
