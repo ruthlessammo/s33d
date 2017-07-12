@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import Message from './Message';
 
 class Register extends Component{
   constructor() {
@@ -16,14 +17,22 @@ class Register extends Component{
   addInfo(e) {
     console.log('Fired!');
     e.preventDefault();
-    $.post('http://localhost:4001/api/register', this.state)
+    $.post('http://localhost:4001/api/', this.state)
     .done(() => {
       console.log('posted');
     });
     $('input').val('');
+    this.setState({ outcome: 'Successful registration!' });
+    console.log(this.state.outcome);
   }
 
   render() {
+
+    let message = null;
+    if (this.state.outcome) {
+      message = <Message outcome={this.state.outcome} />
+    }
+
     return (
       <div className="formContainer">
         <form className="form">
@@ -35,6 +44,7 @@ class Register extends Component{
           <input className="inputs" name='city' onChange={this.setInfo} placeholder="City" />
           <button onClick={this.addInfo}>Sign Me up!</button>
         </form>
+        {message}
       </div>
     )
   }

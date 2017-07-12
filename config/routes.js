@@ -10,7 +10,6 @@ router.all('*', (req, res, next)=>{
 });
 
 router.route('/')
-router.route('/register')
   .post(authController.register)
 router.route('/users')
   .get(UserController.index)

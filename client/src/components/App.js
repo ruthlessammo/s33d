@@ -7,21 +7,12 @@ class App extends Component {
   render() {
     return (
       <div>
-
         <Route
           path="/" exact
           render={() => (
             <Home />
           )}
         />
-
-        <Route
-          path="/register"
-          render={() => (
-            <Register />
-          )}
-        />
-
       </div>
     );
   }
