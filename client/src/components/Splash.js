@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Logo from './Logo';
 import seed from '../assets/seed.mp4';
 import Grid from 'react-css-grid';
-import '../css/Splash.css'
+import '../css/Style.css'
 
 class Splash extends Component {
   render() {

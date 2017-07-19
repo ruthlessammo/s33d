@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Why extends Component {
   render() {
     return (
-      <div>
+      <div className="whyContainer">
         <h3>Why?</h3>
         <p>
           "It is now highly visible to take care of everybody on Earth at a higher standard of living than any other have ever known. It no longer has to be you or me. Selfishness is unnecessary. War is obsolete. It is a matter of converting high technology from weaponary to livingry." <em>Buckminster Fuller</em>
@@ -16,7 +16,7 @@ class Why extends Component {
       </div>
 
     )
-  } 
+  }
 }
 
 export default Why

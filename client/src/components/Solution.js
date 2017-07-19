@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Solution extends Component {
   render() {
     return (
-      <div>
+      <div className="solutionContainer">
         <h3>Solution:</h3>
         <p>
           Distribute a <strong><em>co-operative community driven exchange platform.</em></strong> By leveraging past, present, and future blockchain innovations to subsidies:

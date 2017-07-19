@@ -10,27 +10,17 @@
   /*width: 100vw;*/
 }
 
-.logoTransition-enter {
-  opacity: 0.01
-}
-
-.logoTransition-enter.logoTransition-enter-active {
-  opacity: 1;
-  transition: 3000ms ease-in;
-}
-
-/*.logoTransition-leave {
-  opacity: 1;
-}
-
-.logoTransition-leave.logoTransition-leave-active {
-  opacity: 0.01;
-  transition: 300ms ease-in;
-}*/
-
 .seedVideo {
   position: relative;
   width: 100%;
+}
+
+.whyContainer {
+  /*height: 100vh;*/
+}
+
+.solutionContainer {
+  /*height: 100vh;*/
 }
 /*Mobile*/
 @media screen and (min-width: 480px) {

@@ -11,7 +11,6 @@ class Story extends Component {
       <div>
 
         <Grid col={12}>
-          <h1>Story</h1>
           <h2>Aim: Re-associating the supply chain</h2>
         </Grid>
 
