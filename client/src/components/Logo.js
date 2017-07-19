@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Logo extends Component {
   render() {
     return (
-      <ReactCSSTransitionGroup
-          transitionName="logoTransition"
-          transitionEnterTimeout={500}
-          transitionEnter={true}
-          transitionAppear={true}
-          transitionAppearTimeout={500}
-          transitionLeaveTimeout={1000}>
-
+      <div>
         <h1 className="logo">S33D</h1>
-
-      </ReactCSSTransitionGroup>
+        <p><em>Sowing Energetic Educational Development</em></p>
+      </div>
     )
   }
 }
