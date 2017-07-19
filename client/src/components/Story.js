@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Grid from 'react-css-grid';
 import Why from './Why'
 import Solution from './Solution'
 import How from './How'
@@ -9,13 +10,26 @@ class Story extends Component {
     return (
       <div>
 
-        <h1>Story</h1>
-        <h2>Aim: Re-associating the supply chain</h2>
+        <Grid col={12}>
+          <h1>Story</h1>
+          <h2>Aim: Re-associating the supply chain</h2>
+        </Grid>
 
-        <Why />
-        <Solution />
-        <How />
-        <Result />
+        <Grid col={6}>
+          <Why />
+        </Grid>
+
+        <Grid col={6}>
+          <Solution />
+        </Grid>
+
+        <Grid col={6}>
+          <How />
+        </Grid>
+
+        <Grid col={6}>
+          <Result />
+        </Grid>
 
       </div>
     )

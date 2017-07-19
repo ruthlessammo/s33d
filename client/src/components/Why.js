@@ -16,7 +16,7 @@ class Why extends Component {
       </div>
 
     )
-  }
+  } 
 }
 
 export default Why
