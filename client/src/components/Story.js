@@ -9,24 +9,20 @@ class Story extends Component {
   render() {
     return (
       <div>
-
+      
         <Grid col={12}>
-          <h2>Aim: Re-associating the supply chain</h2>
-        </Grid>
-
-        <Grid col={6}>
           <Why />
         </Grid>
 
-        <Grid col={6}>
+        <Grid col={12}>
           <Solution />
         </Grid>
 
-        <Grid col={6}>
+        <Grid col={12}>
           <How />
         </Grid>
 
-        <Grid col={6}>
+        <Grid col={12}>
           <Result />
         </Grid>
 

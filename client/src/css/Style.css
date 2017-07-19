@@ -1,26 +1,85 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/Futura.ttf);
+}
+
 .splashLogo {
   display: block;
   text-align: center;
-  margin: 0 auto;
+  margin: 18px auto;
+  font-family: 'Futura';
   width: 100%;
+  font-size: 30px;
+  position: absolute;
+  z-index: 2;
 }
 
 .splashVideo {
   display: block;
-  /*width: 100vw;*/
 }
 
 .seedVideo {
   position: relative;
   width: 100%;
 }
-
+/*--------------------WHY------------------------*/
 .whyContainer {
-  /*height: 100vh;*/
+  height: 100vh;
+  margin-top: -4px;
+  font-family: 'Futura';
+  background-image: url(../assets/xander-ashwell.jpg);
+  background-size: cover;
 }
 
+.whyContainerLeft {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+.whyContainerRight {
+  width: 50%;
+  float: right;
+  display: inline-block;
+}
+
+.aim {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.whySubs {
+  font-size: 30px;
+}
+
+/*.quote {
+  width: 33%;
+  font-size: 28px;
+  margin: 20px;
+}*/
+
+/*.whyInfo {
+  width: 33%;
+  float: right;
+  font-size: 28px;
+}*/
+
+/*----------------SOLUTION------------------*/
 .solutionContainer {
-  /*height: 100vh;*/
+  height: 100vh;
+}
+.howContainer {
+  height: 100vh;
+}
+
+.resultContainer {
+  height: 100vh;
+}
+
+.registerButton {
+  background-color: #6f9a37;
+  color: white;
+  border: none;
 }
 /*Mobile*/
 @media screen and (min-width: 480px) {

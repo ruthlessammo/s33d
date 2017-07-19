@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class How extends Component {
   render() {
     return (
-      <div>
+      <div className="howContainer">
         <h3>How:</h3>
           <ol>
             <li><p>Launch a crowdsourced <strong><em>cyrpto-assets</em></strong> knowledge network.</p>

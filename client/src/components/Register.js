@@ -42,7 +42,7 @@ class Register extends Component{
           <input className="inputs" name='country' onChange={this.setInfo} placeholder="Country" />
           <label htmlFor='city'></label>
           <input className="inputs" name='city' onChange={this.setInfo} placeholder="City" />
-          <button onClick={this.addInfo}>Sign Me up!</button>
+          <button className="registerButton" onClick={this.addInfo}>Sign Me up!</button>
         </form>
         {message}
       </div>
