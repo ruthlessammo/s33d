@@ -29,34 +29,48 @@
   font-family: 'Futura';
   background-image: url(../assets/xander-ashwell.jpg);
   background-size: cover;
+  opacity: 0.5;
 }
 
-.whyContainerLeft {
+/*.whyContainerLeft {
   width: 50%;
   float: left;
-  display: inline-block;
+  display: block;
 }
 
 .whyContainerRight {
   width: 50%;
   float: right;
-  display: inline-block;
-}
+  display: block;
+}*/
 
 .aim {
   text-align: center;
   padding-top: 30px;
+  font-size: 40px;
 }
 
 .whySubs {
   font-size: 30px;
 }
 
-/*.quote {
-  width: 33%;
-  font-size: 28px;
-  margin: 20px;
-}*/
+.quote {
+  font-size: 30px;
+  margin-top: 100px;
+  color: black;
+  padding-left: 10px;
+}
+
+.buck {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tradeLegacy {
+  font-size: 30px;
+  margin-top: 350px;
+  color:white;
+}
 
 /*.whyInfo {
   width: 33%;
