@@ -4,7 +4,7 @@ import Grid from 'react-css-grid';
 class Why extends Component {
   render() {
     return (
-      <div className="whyContainer">
+      <div id="why" className="whyContainer">
 
         <Grid col={6}>
           <h2 className="aim">Aim: Re-associating the supply chain</h2>

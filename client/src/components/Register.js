@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import Message from './Message';
+import Grid from 'react-css-grid';
 
 class Register extends Component{
   constructor() {
@@ -35,16 +36,28 @@ class Register extends Component{
 
     return (
       <div className="formContainer">
-        <form className="form">
-          <label htmlFor='email'></label>
-          <input className="inputs middleInputs" name='email' onChange={this.setInfo} placeholder='Email'/>
-          <label htmlFor='country'></label>
-          <input className="inputs" name='country' onChange={this.setInfo} placeholder="Country" />
-          <label htmlFor='city'></label>
-          <input className="inputs" name='city' onChange={this.setInfo} placeholder="City" />
-          <button className="registerButton" onClick={this.addInfo}>Sign Me up!</button>
-        </form>
-        {message}
+        <Grid col={3}><div></div></Grid>
+        <Grid col={6}>
+          <form className="form">
+            <Grid col={12}>
+              <label htmlFor='email'></label>
+              <input className="inputs middleInputs" name='email' onChange={this.setInfo} placeholder='Email'/>
+            </Grid>
+            <Grid col={12}>
+              <label htmlFor='country'></label>
+              <input className="inputs" name='country' onChange={this.setInfo} placeholder="Country" />
+            </Grid>
+            <Grid col={12}>
+              <label htmlFor='city'></label>
+              <input className="inputs" name='city' onChange={this.setInfo} placeholder="City" />
+            </Grid>
+            <Grid col={12}>
+            <button className="registerButton" onClick={this.addInfo}>Sign Me up!</button>
+            </Grid>
+          </form>
+          <Grid col={12}>{message}</Grid>
+        </Grid>
+        <Grid col={3}><div></div></Grid>
       </div>
     )
   }
