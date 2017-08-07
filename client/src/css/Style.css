@@ -23,6 +23,19 @@
   position: relative;
   width: 100%;
 }
+
+nav {
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  z-index: 99999;
+}
+nav ul li {
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
 /*--------------------WHY------------------------*/
 .whyContainer {
   height: 100vh;
@@ -30,13 +43,14 @@
   font-family: 'Futura';
   background-image: url(../assets/field.jpg);
   background-size: cover;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .aim {
   text-align: center;
   padding-top: 18px;
   font-size: 40px;
+  color:#6f9a37
 }
 
 .whySubs {
@@ -46,7 +60,7 @@
 .quote {
   font-size: 30px;
   margin-top: 100px;
-  color: black;
+  color: #685642;
   padding-left: 10px;
 }
 
@@ -58,7 +72,7 @@
 .tradeLegacy {
   font-size: 30px;
   margin-top: 260px;
-  color:black;
+  color:#685642;
 }
 
 /*.whyInfo {
@@ -103,7 +117,7 @@
 
 .howContainer {
   height: 100vh;
-  background-image: url(../assets/john-towner.jpg);
+  /*background-image: url(../assets/john-towner.jpg);*/
   background-size: cover;
   opacity: 0.9;
   font-family: 'Futura';
@@ -111,7 +125,7 @@
 
 .resultContainer {
   height: 100vh;
-  background-image: url(../assets/wheat.jpg);
+  /*background-image: url(../assets/wheat.jpg)*/
   background-size: cover;
   opacity: 0.9;
   font-family: 'Futura';

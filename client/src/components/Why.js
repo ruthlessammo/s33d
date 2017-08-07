@@ -7,7 +7,7 @@ class Why extends Component {
       <div id="why" className="whyContainer">
 
         <Grid col={6}>
-          <h2 className="aim">Aim: Re-associating the supply chain</h2>
+          <h2 className="aim">Re-associating the supply chain</h2>
             <p className="quote">
               It is now highly visible to take care of everybody on Earth at a higher standard of living than any other have ever known. It no longer has to be you or me. Selfishness is unnecessary. War is obsolete. It is a matter of converting high technology from weaponary to livingry. <br/><br/><span className="buck">Buckminster Fuller</span></p>
         </Grid>
