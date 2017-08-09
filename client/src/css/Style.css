@@ -46,7 +46,7 @@ nav ul li {
   height: 100vh;
   margin-top: -4px;
   font-family: 'Futura';
-  background-image: url(../assets/field.jpg);
+  /*background-image: url(../assets/field.jpg);*/
   background-size: cover;
   /*opacity: 0.8;*/
 }
@@ -89,7 +89,7 @@ nav ul li {
 /*----------------SOLUTION------------------*/
 .solutionContainer {
   height: 100vh;
-  background-image: url(../assets/toronto.jpg);
+  /*background-image: url(../assets/toronto.jpg);*/
   background-size: cover;
   opacity: 0.8;
   font-family: 'Futura';

@@ -4,7 +4,6 @@ import Why from './Why'
 import Solution from './Solution'
 import How from './How'
 import Result from './Result'
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 class Story extends Component {
   render() {
@@ -15,29 +14,22 @@ class Story extends Component {
 
         <Grid col={8}>
           <Grid col={12}>
-            <ScrollableAnchor id={'why'}>
-              <Why />
-            </ScrollableAnchor>
+            <Why />
           </Grid>
 
           <Grid col={12}>
-            <ScrollableAnchor id={'solution'}>
-              <Solution />
-            </ScrollableAnchor>
+            <Solution />
           </Grid>
 
           <Grid col={12}>
-            <ScrollableAnchor id={'how'}>
-              <How />
-            </ScrollableAnchor>
+            <How />
           </Grid>
 
           <Grid col={12}>
-            <ScrollableAnchor id={'result'}>
-              <Result />
-            </ScrollableAnchor>
+            <Result />
           </Grid>
         </Grid>
+
         <Grid col={2}></Grid>
 
 

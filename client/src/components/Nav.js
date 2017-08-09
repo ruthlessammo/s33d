@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
+// import ScrollableAnchor from 'react-scrollable-anchor'
+// import { configureAnchors } from 'react-scrollable-anchor'
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
-configureAnchors({scrollDuration: 600})
+// configureAnchors({scrollDuration: 600})
 
 class Nav extends Component {
   render() {
