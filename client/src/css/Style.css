@@ -3,7 +3,6 @@
   src: url(../assets/Futura.ttf);
 }
 
-
 .splashLogo {
   display: block;
   text-align: center;
@@ -36,6 +35,12 @@ nav ul li {
   padding: 5px;
   text-align: center;
 }
+
+.container {
+  margin: 0 auto;
+  background: white;
+}
+
 /*--------------------WHY------------------------*/
 .whyContainer {
   height: 100vh;
