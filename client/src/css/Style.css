@@ -3,6 +3,10 @@
   src: url(../assets/Futura.ttf);
 }
 
+.particles div {
+  height: 100%;
+}
+
 .splashLogo {
   display: block;
   text-align: center;
