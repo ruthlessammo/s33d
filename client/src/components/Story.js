@@ -24,7 +24,7 @@ class Story extends Component {
                   }
                 }}/>
         </div>
-        <Grid col={8}>
+        <Grid col={8} style={["zIndex:2","margin:0 auto"]}>
           <Grid col={12}>
             <Why />
           </Grid>
@@ -42,19 +42,6 @@ class Story extends Component {
           </Grid>
         </Grid>
 
-        <div className="particles">
-          <Particles params={{
-                  particles: {
-                    line_linked: {
-                      shadow: {
-                        enable: true,
-                        color: "#000000",
-                        blur: .5
-                      }
-                    }
-                  }
-                }}/>
-        </div>
 
 
       </Grid>

@@ -15,7 +15,7 @@ const app = express();
 
 app.use(morgan('dev'));
 
-mongoose.connect(dbURI);
+mongoose.connect(dbURI, {useMongoClient: true});
 app.use(bodyParser.json({limit: '5mb'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 
