@@ -4,7 +4,9 @@ import Why from './Why';
 import Solution from './Solution'
 import How from './How';
 import Result from './Result';
+import Register from './Register';
 import Particles from 'react-particles-js';
+
 
 class Story extends Component {
   render() {
@@ -22,25 +24,31 @@ class Story extends Component {
                       }
                     }
                   }
-                }}/>
+                }} />
         </div>
-        <Grid col={8} style={["zIndex:2","margin:0 auto"]}>
-          <Grid col={12}>
-            <Why />
-          </Grid>
 
-          <Grid col={12}>
-            <Solution />
-          </Grid>
+        <div className="storyContainer">
+          <Grid col={8}>
+            <Grid col={12}>
+              <Why />
+            </Grid>
 
-          <Grid col={12}>
-            <How />
-          </Grid>
+            <Grid col={12}>
+              <Solution />
+            </Grid>
 
-          <Grid col={12}>
-            <Result />
+            <Grid col={12}>
+              <How />
+            </Grid>
+
+            <Grid col={12}>
+              <Result />
+            </Grid>
+            <Grid col={12}>
+              <Register />
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
 
 
 

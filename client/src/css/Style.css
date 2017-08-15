@@ -4,7 +4,12 @@
 }
 
 .particles div {
-  height: 1000%;
+  height: 100%;
+}
+
+.particles {
+  z-index: -1;
+  position: relative;
 }
 
 .splashLogo {
@@ -43,6 +48,10 @@ nav ul li {
 .container {
   margin: 0 auto;
   background: white;
+}
+
+.storyContainer {
+  position: absolute;
 }
 
 /*--------------------WHY------------------------*/

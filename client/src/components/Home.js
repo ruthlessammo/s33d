@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Splash from './Splash';
 import Story from './Story';
-import Register from './Register';
 import Nav from './Nav';
 
 class Home extends Component {
@@ -11,7 +10,6 @@ class Home extends Component {
         <Nav />
         <Splash />
         <Story />
-        <Register />
       </div>
     )
   }
