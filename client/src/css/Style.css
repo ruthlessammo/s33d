@@ -37,6 +37,7 @@
   font-size: 30px;
   position: absolute;
   z-index: 2;
+  padding-top: 8px;
 }
 
 .splashVideo {
@@ -54,6 +55,7 @@ nav {
   overflow-y: visible;
   width: 100%;
   z-index: 99999;
+  background: white;
 }
 nav ul li {
   display: inline-block;
@@ -73,6 +75,7 @@ nav ul li {
   font-family: 'Futura';
   /*background-image: url(../assets/field.jpg);*/
   background-size: cover;
+  background: white;
   /*opacity: 0.8;*/
 }
 
@@ -114,9 +117,8 @@ nav ul li {
 /*----------------SOLUTION------------------*/
 .solutionContainer {
   height: 100vh;
-  /*background-image: url(../assets/toronto.jpg);*/
+  background: white;
   background-size: cover;
-  opacity: 0.8;
   font-family: 'Futura';
 }
 
@@ -147,23 +149,22 @@ nav ul li {
 
 .howContainer {
   height: 100vh;
-  /*background-image: url(../assets/john-towner.jpg);*/
+  background: white;
   background-size: cover;
-  opacity: 0.9;
   font-family: 'Futura';
 }
 
 .resultContainer {
   height: 100vh;
-  /*background-image: url(../assets/wheat.jpg)*/
+  background: white;
   background-size: cover;
-  opacity: 0.9;
   font-family: 'Futura';
 }
 /*-------------RESULT---------------*/
 .formContainer {
   height: 50vh;
   width: 100%;
+  background: white;
 }
 
 .form {
