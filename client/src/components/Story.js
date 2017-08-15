@@ -32,19 +32,27 @@ class Story extends Component {
 
           <div className="storyContainer">
 
-            <Splash />
+            <Grid col={12}>
+              <Splash />
+            </Grid>
 
-            <Why />
+            <Grid col={2}></Grid>
 
-            <Solution />
+            <Grid col={8}>
+              <Why />
 
-            <How />
+              <Solution />
 
-            <Result />
+              <How />
 
-            <Register />
+              <Result />
 
+              <Register />
+            </Grid>
+
+            <Grid col={2}></Grid>
           </div>
+
         </div>
 
 
