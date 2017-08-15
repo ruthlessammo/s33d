@@ -5,54 +5,52 @@ import Solution from './Solution'
 import How from './How';
 import Result from './Result';
 import Register from './Register';
+import Splash from './Splash';
 import Particles from 'react-particles-js';
 
 
 class Story extends Component {
   render() {
     return (
-      <Grid col={12}>
+      <div>
 
         <div className="particles">
-          <Particles params={{
-                  particles: {
-                    line_linked: {
-                      shadow: {
-                        enable: true,
-                        color: "#000000",
-                        blur: .5
+          <div className="subParticles">
+            <Particles style={["position: fixed"]} params={{
+                    particles: {
+                      line_linked: {
+                        shadow: {
+                          enable: true,
+                          color: "#000000",
+                          blur: .5
+                        }
                       }
                     }
-                  }
-                }} />
-        </div>
+                  }} />
+          </div>
 
-        <div className="storyContainer">
-          <Grid col={8}>
-            <Grid col={12}>
-              <Why />
-            </Grid>
 
-            <Grid col={12}>
-              <Solution />
-            </Grid>
+          <div className="storyContainer">
 
-            <Grid col={12}>
-              <How />
-            </Grid>
+            <Splash />
 
-            <Grid col={12}>
-              <Result />
-            </Grid>
-            <Grid col={12}>
-              <Register />
-            </Grid>
-          </Grid>
+            <Why />
+
+            <Solution />
+
+            <How />
+
+            <Result />
+
+            <Register />
+
+          </div>
         </div>
 
 
 
-      </Grid>
+
+      </div>
     )
   }
 }
