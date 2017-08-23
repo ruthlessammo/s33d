@@ -4,7 +4,8 @@ class How extends Component {
   render() {
     return (
       <div className="howContainer">
-        <h3>How:</h3>
+        <h3>How</h3>
+        <div></div>
           <ol>
             <li><p>Launch a crowdsourced <strong><em>cyrpto-assets</em></strong> knowledge network.</p>
               <ul>
@@ -33,6 +34,7 @@ class How extends Component {
               </ul>
             </li>
           </ol>
+          <div style={["width:100%; "]}><hr/></div>
       </div>
 
     )

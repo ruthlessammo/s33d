@@ -7,6 +7,7 @@ import Result from './Result';
 import Register from './Register';
 import Splash from './Splash';
 import Particles from 'react-particles-js';
+import Scrollchor from 'react-scrollchor';
 
 
 class Story extends Component {
@@ -19,7 +20,7 @@ class Story extends Component {
             <Particles style={["position: fixed"]} params={{
               particles: {
                 number: {
-                  value: 40,
+                  value: 50,
                   density: {
                     enable: true,
                     value_area: 800
@@ -124,21 +125,21 @@ class Story extends Component {
           <div className="storyContainer">
 
             <Grid col={12}>
-              <Splash />
+              <Splash id="home" />
             </Grid>
 
             <Grid col={2}></Grid>
 
             <Grid col={8}>
-              <Why />
+              <Why id="why" />
 
-              <Solution />
+              <Solution id="solution" />
 
-              <How />
+              <How id="how" />
 
-              <Result />
+              <Result id="result" />
 
-              <Register />
+              <Register id="join" />
             </Grid>
 
             <Grid col={2}></Grid>

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Scrollchor from 'react-scrollchor';
+
 // import ScrollableAnchor from 'react-scrollable-anchor'
 // import { configureAnchors } from 'react-scrollable-anchor'
 
@@ -11,12 +13,12 @@ class Nav extends Component {
     return (
       <nav>
         <ul>
-          <li><a href='#home'>Home</a></li>
-          <li><a href='#why'>Why</a></li>
-          <li><a href='#solution'>Solution</a></li>
-          <li><a href='#how'>How</a></li>
-          <li><a href='#Result'>Result</a></li>
-          <li><a href='#join'>Join</a></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#home'>Home</Scrollchor></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#why'>Why</Scrollchor></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#solution'>Solution</Scrollchor></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#how'>How</Scrollchor></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#result'>Result</Scrollchor></li>
+          <li><Scrollchor style={["textDecoration: none"]} to='#join'>Join</Scrollchor></li>
         </ul>
       </nav>
     )

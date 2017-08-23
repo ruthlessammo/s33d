@@ -81,31 +81,40 @@ nav ul li {
 
 .aim {
   text-align: center;
+  margin: 0 auto;
   padding-top: 18px;
   font-size: 40px;
-  color:#6f9a37
+  color:#6f9a37;
 }
 
 .whySubs {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .quote {
-  font-size: 30px;
+  font-size: 22px;
   margin-top: 100px;
-  color: #685642;
+  color: black;
   padding-left: 10px;
 }
 
 .buck {
-  font-weight: bold;
   font-style: italic;
 }
 
 .tradeLegacy {
-  font-size: 30px;
-  margin-top: 260px;
-  color:#685642;
+  font-size: 22px;
+  margin-top: 100px;
+  color:black;
+}
+
+.whyIcons {
+  text-align: center;
+  margin-top: 80px;
+}
+.whyIcons img {
+  height: 100px;
+  padding: 50px;
 }
 
 /*.whyInfo {
@@ -126,23 +135,36 @@ nav ul li {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  padding-top: 80px;
+  padding-top: 45px;
 }
 
 .solutionP {
   text-align: center;
-  padding-top: 160px;
-  font-size: 32px;
+  /*padding-top: 160px;*/
+  font-size: 28px;
   line-height: 1.25;
   opacity: 3;
   font-weight: bold;
-  padding: 140px;
+  padding: 50px;
 }
 
 .solutionPoints {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+}
+
+.solutionPoints li {
+  padding: 5px;
+}
+
+.solutionIcons {
+  text-align: center;
+  margin-top: 30px;
+}
+.solutionIcons img {
+  height:85px;
+  padding: 5px;
 }
 
 /*--------------HOW-------------------*/
@@ -154,13 +176,23 @@ nav ul li {
   font-family: 'Futura';
 }
 
+.howContainer h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.howContainer h3 ol {
+  font-size: 20px;
+}
+
+/*-------------RESULT---------------*/
 .resultContainer {
   height: 100vh;
   background: white;
   background-size: cover;
   font-family: 'Futura';
 }
-/*-------------RESULT---------------*/
+
 .formContainer {
   height: 50vh;
   width: 100%;
