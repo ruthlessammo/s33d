@@ -180,10 +180,48 @@ nav ul li {
 .howContainer h3 {
   font-size: 40px;
   text-align: center;
+  padding: 5px 0;
 }
 
 .howContainer h3 ol {
   font-size: 20px;
+}
+
+.howNumber {
+  font-size: 28px;
+  text-align: center;
+}
+
+.numberSpan {
+  float: left;
+  padding-left: 10px;
+}
+
+.roadMap {
+  font-size: 24px;
+}
+
+.seedsAndServices {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.map {
+  text-align: center;
+}
+
+.map img {
+  height: 120px;
+  padding: 10px;
+}
+.howIcons {
+  text-align: center;
+}
+
+.howIcons img {
+  height: 100px;
+  padding: 10px;
 }
 
 /*-------------RESULT---------------*/
