@@ -42,6 +42,7 @@
 
 .splashVideo {
   display: block;
+  opacity: 0.9;
 }
 
 .seedVideo {
@@ -84,7 +85,8 @@ nav ul li {
   margin: 0 auto;
   padding-top: 18px;
   font-size: 40px;
-  color:#6f9a37;
+  color:black;
+  font-weight: bold;
 }
 
 .whySubs {
@@ -220,16 +222,47 @@ nav ul li {
 }
 
 .howIcons img {
-  height: 100px;
+  height: 80px;
   padding: 10px;
+  /*margin-bottom: 25px;*/
 }
 
 /*-------------RESULT---------------*/
 .resultContainer {
-  height: 100vh;
+  /*height: 100vh;*/
   background: white;
   background-size: cover;
   font-family: 'Futura';
+}
+
+.result {
+  text-align: center;
+  font-size: 48px;
+}
+
+.resultSub {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 15px;
+}
+
+.resultPillars {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 15px;
+  /*margin-top: 10px;*/
+}
+
+.pillars {
+  width: 100%;
+  text-align: center;
+  /*margin-left: -10px;*/
+}
+
+.pillars img {
+  height: 40px;
+  padding: 20px;
 }
 
 .formContainer {
@@ -238,9 +271,29 @@ nav ul li {
   background: white;
 }
 
+.focus {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.focusP {
+  font-size: 20px;
+  /*text-align: center;*/
+  padding: 10px;
+  list-style:disc;
+  margin-left: 50px;
+}
+/*-------------------------------------*/
+.join {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Futura';
+}
+
 .form {
   display: block;
-  padding-top: 50px;
+
 }
 
 input::-webkit-input-placeholder {

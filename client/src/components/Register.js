@@ -36,6 +36,7 @@ class Register extends Component{
 
     return (
       <div className="formContainer">
+        <Grid col={12}><p className="join">Register now</p></Grid>
         <Grid col={3}><div></div></Grid>
         <Grid col={6}>
           <form className="form">

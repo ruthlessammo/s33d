@@ -29,7 +29,6 @@ class How extends Component {
                 </li>
                 <br/>
                 <br/>
-                <br/>
                 {/*<li>
                   <p>Incentivised P2P network scaling and innovation across both the seeds and service trade webs of:</p>
                   <ul>
@@ -41,7 +40,7 @@ class How extends Component {
             </li>
           </ol>
           <div className="howIcons"><img src={minus}/><img src={network}/><img src={help}/></div>
-          <div style={["width:100%; "]}><hr/></div>
+          <hr/>
       </div>
 
     )
