@@ -25,7 +25,7 @@ class Why extends Component {
               <img src={brokenLink}/>
             </div>
           </Grid>
-          <div style={["width:100%; "]}><hr/></div>
+          <div style={["width:100%"]}><hr/></div>
       </div>
 
     )

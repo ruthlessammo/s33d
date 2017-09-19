@@ -1,32 +1,55 @@
 import React, { Component } from 'react';
-import Scrollchor from 'react-scrollchor';
+import '../css/App.css';
+import FontAwesome from 'react-fontawesome';
+import fb from '../assets/fb.png';
+import tw from '../assets/tw.png';
+import insta from '../assets/insta.png';
 
-// import ScrollableAnchor from 'react-scrollable-anchor'
-// import { configureAnchors } from 'react-scrollable-anchor'
 
-// Offset all anchors by -60 to account for a fixed header
-// and scroll more quickly than the default 400ms
-// configureAnchors({scrollDuration: 600})
 
-class Nav extends Component {
+class Nav extends Component{
+  constructor() {
+    super();
+    this.state = {};
+    this.burgerToggle = this.burgerToggle.bind(this);
+  }
+
+  burgerToggle() {
+    let linksEl = document.querySelector('.narrowLinks');
+    if (linksEl.style.display === 'block') {
+            linksEl.style.display = 'none';
+        } else {
+            linksEl.style.display = 'block';
+        }
+  }
+
   render() {
     return (
       <nav>
-        <ul style={["width: 100%"]}>
-          <li><Scrollchor style={["textDecoration: none"]} to='#home'>Home</Scrollchor></li>
-          {/*<li><Scrollchor style={["textDecoration: none"]} to='#why'>Why</Scrollchor></li>
-          <li><Scrollchor style={["textDecoration: none"]} to='#solution'>Solution</Scrollchor></li>
-          <li><Scrollchor style={["textDecoration: none"]} to='#how'>How</Scrollchor></li>
-          <li><Scrollchor style={["textDecoration: none"]} to='#result'>Result</Scrollchor></li>*/}
-          <li><Scrollchor style={["textDecoration: none"]} to='#join'>Join</Scrollchor></li>
-          <span style={["float: right"]}>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-          </span>
-        </ul>
+        <div className="navWide">
+          <div className="wideDiv">
+              <a href="https://www.facebook.com/s33d.love/" target="_blank"><img src={fb}/></a>
+              <a href="https://twitter.com/s33deets" target="_blank"><img src={tw}/></a>
+              <a href="https://www.instagram.com/S33dgram/" target="_blank"><img src={insta}/></a>
+          </div>
+        </div>
+        <div className="navNarrow">
+          <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}>
+          <FontAwesome
+            className='fa fa-bars'
+            name='fa-bars'
+            size='2x'
+            onClick={this.burgerToggle}
+          />
+          </i>
+            <div className="narrowLinks">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
       </nav>
-    )
+    );
   }
 }
 
