@@ -42,7 +42,7 @@
 
 .splashVideo {
   display: block;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
 }
 
 .seedVideo {
@@ -56,12 +56,16 @@ nav {
   overflow-y: visible;
   width: 100%;
   z-index: 99999;
-  background: white;
+  /*background-color: grey;*/
+  /*opacity: .75;*/
 }
 nav ul li {
   display: inline-block;
   padding: 5px;
   text-align: center;
+  text-decoration: none !important;
+  /*background-color: grey;*/
+  font-family: 'Futura';
 }
 
 .container {
@@ -308,7 +312,7 @@ input::-webkit-input-placeholder {
 }
 
 .registerButton {
-  background-color: #6f9a37;
+  background-color: grey;
   color: white;
   border: none;
   width: 101%;
@@ -316,6 +320,10 @@ input::-webkit-input-placeholder {
   height: 30px;
   font-size: 18px;
   border-radius: 25px;
+}
+
+.registerButton:hover {
+  background-color: #6f9a37;
 }
 
 
