@@ -31,6 +31,9 @@ nav {
       clear: left;
       padding: 0.5em 0; }
 
+.logo .logoSpan {
+  margin-bottom: 5px; }
+
 @media (min-width: 0) {
   nav .navWide {
     display: block; }

@@ -59,6 +59,12 @@ nav {
 	}
 }
 
+.logo {
+  .logoSpan {
+    margin-bottom: 5px;
+  }
+}
+
 // Adjust breakpoint as desired to select when the "hamburger" menu is
 // replaced by just the links.
 @media (min-width: 0) {
